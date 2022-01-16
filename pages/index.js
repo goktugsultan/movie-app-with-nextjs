@@ -11,7 +11,6 @@ export default function Home({ movies }) {
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-    <h3>Populer Films</h3>
     <PopularFilm movies={movies}/>
 
   
