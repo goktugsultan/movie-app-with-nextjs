@@ -6,7 +6,7 @@ export default function Header() {
             <ul>
                 <li>
                     <Link href="/">
-                        <a>Homepage</a>
+                        <a>Movie List</a>
                     </Link>
                 </li>
                 <li>
