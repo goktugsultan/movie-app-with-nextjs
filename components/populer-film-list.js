@@ -1,3 +1,6 @@
+
+import Link from 'next/link'
+
 export default function PopularFilm({ movies }) {
     return <div className="popular-films">
         <h3>Popular Films</h3>
@@ -17,7 +20,10 @@ export default function PopularFilm({ movies }) {
                         </li>  
                         <li>
                             <p className="vote">Popularity : {movie.popularity} <i>people</i></p>
-                        </li>    
+                        </li> 
+                        <Link href={`/film/${movie.id}`}>
+                            <a>Read more</a>
+                        </Link>   
                     </ul>   
                     </div>
                 </div>
@@ -62,6 +68,21 @@ export default function PopularFilm({ movies }) {
             }
             span{
                 line-height:1.5;
+            }
+            ul {
+                a{
+                    color:#000;
+                    text-decoration:none;
+                    border:1px solid #c3c0c0;
+                    padding:8px 32px;
+                    margin-top:12px;
+                    display:inline-block;
+
+                    &:hover {
+                        border:2px solid #000;
+
+                    }
+                }
             }
         }
         @media screen and (max-width: 600px) {

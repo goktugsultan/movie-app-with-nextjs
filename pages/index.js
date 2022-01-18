@@ -8,7 +8,7 @@ export default function Home({ movies }) {
   return (
     <>
       <Head>
-        <title>Create Next App</title>
+        <title>Popular Films</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
     <PopularFilm movies={movies}/>
